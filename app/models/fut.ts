@@ -10,4 +10,10 @@ export default class Fut extends BaseModel {
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   declare updatedAt: DateTime
+
+  @column()
+  declare reference: string
+
+  @column()
+  declare seuil: number
 }

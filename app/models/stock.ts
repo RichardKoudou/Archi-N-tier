@@ -16,4 +16,10 @@ export default class Stock extends BaseModel {
 
   @column()
   declare quantity: number
+
+  @column()
+  declare seuil: number
+
+  @column()
+  declare reappro: DateTime
 }
