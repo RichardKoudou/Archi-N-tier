@@ -12,5 +12,5 @@ export default class Category extends BaseModel {
   declare updatedAt: DateTime
 
   @column()
-  declare nom: string
+  declare name: string
 }

@@ -9,7 +9,7 @@ export default class extends BaseSchema {
 
       table.timestamp('created_at', { useTz: true }).defaultTo(this.now())
       table.timestamp('updated_at', { useTz: true }).defaultTo(this.now())
-      table.string('nom', 255).notNullable()
+      table.string('name', 255).notNullable()
     })
   }
 
