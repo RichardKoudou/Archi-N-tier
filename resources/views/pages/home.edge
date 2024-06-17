@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +8,48 @@
 
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
+
 <body>
-  <h1> It Works! </h1>
+
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+
+    <div class="bg-white border-2 border-black p-4 w-3/4 h-3/4 rounded-md">
+      <div class="flex h-full">
+        <div class="flex-grow bg-white border-2 border-black mr-4 rounded-md p-4">
+          <span class="block text-left">Fut</span>
+          <div class="flex items-center justify-between border-2 border-black p-2 mb-2 rounded-md">
+            <span>Nom de boison</span>
+            <div class="flex items-center">
+              <button class="bg-blue-200 text-black font-bold py-1 px-2 rounded-l">-</button>
+              <span class="mx-2">0</span>
+              <button class="bg-blue-200 text-black font-bold py-1 px-2 rounded-r">+</button>
+            </div>
+            <button class="bg-blue-500 text-white font-bold py-1 px-4 rounded ml-2">Commander</button>
+          </div>
+        </div>
+        <div class="w-1/4 bg-white border-2 border-black rounded-md p-4">
+          <span class="block text-left">Stock</span>
+          <!-- Stock 1 -->
+          <div class="flex items-center justify-between border-2 border-black p-2 mb-2 rounded-md">
+            <span>Nom de boison</span>
+            <div class="bg-blue-200 text-black font-bold py-1 px-2 rounded">12</div>
+          </div>
+          <!-- Stock 2 -->
+          <div class="flex items-center justify-between border-2 border-black p-2 mb-2 rounded-md">
+            <span>Nom de boison</span>
+            <div class="bg-blue-200 text-black font-bold py-1 px-2 rounded">12</div>
+          </div>
+          <!-- Stock 3 -->
+          <div class="flex items-center justify-between border-2 border-black p-2 rounded-md">
+            <span>Nom de boison</span>
+            <div class="bg-blue-200 text-black font-bold py-1 px-2 rounded">12</div>
+          </div>
+        </div>
+      </div>
+      <span class="block text-center mt-4">caisse</span>
+    </div>
+
+  </body>
 </body>
+
 </html>
